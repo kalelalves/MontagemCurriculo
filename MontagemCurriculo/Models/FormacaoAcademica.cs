@@ -9,6 +9,11 @@ namespace MontagemCurriculo.Models
         public int TipoCursoId { get; set; }
         public TipoCurso TipoCurso { get; set; }
 
+        public int CurriculoId { get; set; }
+        public Curriculo Curriculo { get; set; }
+
+
+
         [Required(ErrorMessage = "Campo obrigatório")]
         [StringLength(50, ErrorMessage = "Use menos caracteres")]
         public string Instituicao { get; set; }
@@ -26,9 +31,7 @@ namespace MontagemCurriculo.Models
         [StringLength(50, ErrorMessage = "Use menos caracteres")]
         public string NomeCurso { get; set; }
 
-        public int CurriculoId { get; set; }
-        public Curriculo Curriculo { get; set; }
-
+        
 
     }
 }

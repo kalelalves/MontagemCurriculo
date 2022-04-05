@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MontagemCurriculo.Models
 {
@@ -6,12 +7,13 @@ namespace MontagemCurriculo.Models
     {
         public int ObjetivoId { get; set; }
 
-        [Required(ErrorMessage  = "Descrisção obrigatória")]
-        [StringLength(1000,ErrorMessage ="Descrcao muito longa")]
+        [Required(ErrorMessage = "Descrição obrigatória")]
+        [StringLength(1000, ErrorMessage = "Descrição muito longa")]
         [DataType(DataType.MultilineText)]
-        public string CurriculoId { get; set; }
-        public int Nome { get; set; }
+        public string Descricao { get; set; }
 
-
+        public int CurriculoId { get; set; }
+        public Curriculo Curriculo { get; set; }
+     
     }
 }

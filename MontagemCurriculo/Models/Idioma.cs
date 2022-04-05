@@ -12,7 +12,7 @@ namespace MontagemCurriculo.Models
         [Required(ErrorMessage = "Campo Obrigatório")]
         [StringLength(50, ErrorMessage = "Use menos caracteres")]
         public string Nivel { get; set; }
-        public int CurriculoID { get; set; }
+        public int CurriculoId { get; set; }
         public Curriculo Curriculo { get; set; }
     }
 }

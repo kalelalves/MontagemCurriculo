@@ -3,10 +3,11 @@
 namespace MontagemCurriculo.Models
 {
     public class TipoCurso
+
     {
         public int TipoCursoId { get; set; }
 
-        public string TipoCursoName { get; set; }
+        public string Tipo { get; set; }
 
         public ICollection<FormacaoAcademica> FormacoesAcademicas { get; set; }
 
